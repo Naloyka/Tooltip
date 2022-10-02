@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.btn {
+    display: block;
+    width: 207px;
+    height: 40px;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #942a35;
+}
+
+.tooltip {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 274px;
+    border: 1px solid #6b6b6b;
+    border-radius: 10px;
+
+}
+
+.popover {
+    width: 100%;
+    border-bottom: 1px solid#6b6b6b;
+    background: #ebebeb;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.popover::after,
+.popover::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    left: calc(50% - 10px);
+}
+
+.popover::after {
+    border-top: 10px solid #fff;
+    bottom: -18px;
+}
+
+.popover::before {
+    border-top: 10px solid #6b6b6b;
+    bottom: -20px;
+}
+
+.popver_title {
+    padding: 12px 8px;
+}
+
+.conent_title {
+    display: block;
+    padding: 12px 8px;
+}
+
+.btn-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
